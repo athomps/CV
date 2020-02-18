@@ -1,3 +1,5 @@
+#!/bin/bash
+export PATH=/Library/TeX/texbin:$PATH
 pdflatex CV.tex
 bibtex bu1.aux
 bibtex bu2.aux
