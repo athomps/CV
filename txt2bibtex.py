@@ -94,6 +94,7 @@ while 1:
     elif "INVITED TALKS" in line:
         break
     elif startflag:
+#        print(line)
         if len(line) > 1:
             a = Article.fromline(line)
             a.write()
