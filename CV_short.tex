@@ -1,12 +1,5 @@
 \documentclass[11pt]{article}
 
-% standard fonts:  helvet, avant, courier, chancery, times, palatino, bookman, newcent, charter
-% command for setting default font family:  \renewcommand{\familydefault}{\sfdefault}
-
-% favorites are helvet, charter, avant
-
-% arial calibri ?
-
 \usepackage{helvet}
 
 \usepackage[square,numbers]{natbib}
@@ -34,8 +27,6 @@
 \setlength{\parindent}{\myparindent}
 \setlength{\parskip}{.06in} % also need to set this inside \parbox
 
-% bibliography options:
-% create simple numbered list
 \makeatletter
 \renewcommand\@biblabel[1]{#1.}
 \makeatother
@@ -119,124 +110,71 @@ athomps@sandia.gov \hspace{.1in} (505) 218-1011 \\
 \textbf{B.S., Chemical Engineering}, University College Dublin, National University of Ireland, 1986
 \end{minipage}
 
-\vspace{\sectionskip}
-\noindent
-{\large \textbf{RESEARCH INTERESTS}}
-\vspace{\sectionskip}
-
-%% \begin{minipage}{\minipagewidth}
-%% Data-Driven Interatomic Potentials
-
-%% \vspace{\listskip}
-%% Atomistic Materials Simulation
-
-%% \vspace{\listskip}
-%% High-Performance Computing
-%% \end{minipage}\vspace{\parskip}
-
-\begin{minipage}{\minipagewidth}
-\setlength{\parindent}{\myparindent}
-\noindent \textbf{Data-Driven Interatomic Potentials} \\
-\indent spectral neighbor analysis potential (SNAP) \\
-\indent automated training and validation software (FitSNAP) \\
-\indent rotation-invariant atomic environment descriptors \\
-\indent ab initio training data generation 
-\end{minipage}\vspace{\parskip}
-
-\begin{minipage}{\minipagewidth}
-\setlength{\parindent}{\myparindent}
-\noindent \textbf{Atomistic Materials Simulation} \\
-\indent LAMMPS software development \\
-\indent interatomic potential development \\
-\indent equilibrium and non-equilibrium molecular dynamics \\
-\indent kinetic Monte Carlo \\
-\indent equilibrium Monte Carlo \\
-\indent statistical physics
-\end{minipage}
-
-\begin{minipage}{\minipagewidth}
-\setlength{\parindent}{\myparindent}
-\noindent \textbf{High-Performance Computing} \\
-\indent scalable parallel algorithms \\
-\indent code optimization for advanced architectures \\
-\indent software development for leadership computing platforms
-\end{minipage}
-
-%% CURRENT RESEARCH
-%% SNAP (Spectral Neighbor Analysis Potential): Advancing the state-of-the-art of data-driven interatomic potentials for accurate large-scale atomistic simulations of materials. Developing efficient scalable implementations of SNAP for advanced architectures.  Developing Python framework for fitting SNAP potentials to large sets of quantum data.  Generating robust, fast, and accurate potentials for predictive atomistic simulations of complex multiscale materials physics, including phase change kinetics, plastic yielding, and plasma-surface interactions.
-%% Materials Chemistry Modeling: Developing and applying massively parallel implementations of reactive force fields to multi-million atom simulations of energetics materials at extreme conditions.  
-%% LAMMPS: Developing LAMMPS since 1997
+%Suggestions
+%
+%A couple of suggestions for your CV (not only for APS fellowship nomination, but for future use):
+%
+%1. Format it to make more condensed for visual appeal: people don't like to read long documents with many pages.
+%
+%2. Ordering of the sections: 1- Education; 2. Employment history; 3. Research Interests; 4. Professional Recognition and Awards (I would include SCCM-19 plenary talk as a recognition); 5. Professional service (combine your prof service with refereeing as the latter is also professional service), include any committees you served at SNL and beyond; 6. Post-doctoral mentorship; 7. Student mentorship; 8. Add list of funded proposals if you want to show the breadth of your research; 7. Presentations; 8. Publications.
+%
+%3. You may list USF Adjunct Professorship (since 2/19)  in the employment history
+%
+%I am working on some corrections/improvements to the second document and will send it separately with cc to Tim.
 
 
 
 %\input{CV_employment_long.tex}
 \input{CV_employment_short.tex}
 
-%\vspace{-0.1in}
+\noindent
+{\large \textbf{RESEARCH INTERESTS}}
+\vspace{\sectionskip}
 
-%\input{CV_leadership.tex}
+\begin{minipage}{\minipagewidth}
+\setlength{\parindent}{\myparindent}
+\noindent \textbf{Data-Driven Interatomic Potentials:}
+spectral neighbor analysis potential (SNAP);
+automated training and validation software (FitSNAP); 
+rotation-invariant atomic environment descriptors;
+ab initio training data generation 
+\end{minipage}\vspace{\parskip}
 
-%\vspace{-0.1in}
+\begin{minipage}{\minipagewidth}
+\setlength{\parindent}{\myparindent}
+\noindent \textbf{Atomistic Materials Simulation:}
+LAMMPS software development;
+interatomic potential development;
+equilibrium and non-equilibrium molecular dynamics;
+kinetic Monte Carlo;
+equilibrium Monte Carlo;
+statistical physics
+\end{minipage}
 
-%\input{CV_software.tex}
+\begin{minipage}{\minipagewidth}
+\setlength{\parindent}{\myparindent}
+\noindent \textbf{High-Performance Computing:}
+scalable parallel algorithms;
+code optimization for advanced architectures;
+software development for leadership computing platforms
+\end{minipage}
 
-\vspace{-0.1in}
-
-\begin{bibunit}[unsrtnat]
-  \renewcommand{\refname}{{\large PEER-REVIEWED JOURNAL ARTICLES \\
-    \noindent Google Scholar: \url{https://scholar.google.com/citations?user=RxtcvuUAAAAJ&hl=en}}}  \nocite{*}
-  \putbib[CV_journal_articles]
-\end{bibunit}
-
-\vspace{-0.1in}
-
-%% \begin{bibunit}[unsrtnat]
-%%   \renewcommand{\refname}{{\large BOOK CHAPTERS}}
-%%   \nocite{*}
-%%   \putbib[CV_book_chapters]
-%% \end{bibunit}
-
-%% \vspace{-0.1in}
-
-%% \begin{bibunit}[unsrtnat]
-%%   \renewcommand{\refname}{{\large CONFERENCE PROCEEDINGS}}
-%%   \nocite{*}
-%%   \putbib[CV_conference_proceedings]
-%% \end{bibunit}
-
-%% \vspace{-0.1in}
-
-%% \begin{bibunit}[unsrtnat]
-%%   \renewcommand{\refname}{{\large SELECTED TECHNICAL REPORTS}}
-%%   \nocite{*}
-%%   \putbib[CV_tech_reports]
-%% \end{bibunit}
-
-%% \vspace{-0.1in}
 
 \begin{bibunit}[unsrtnat]
-  \renewcommand{\refname}{{\large INVITED TALKS}}
+  \renewcommand{\refname}{{\large PROFESSIONAL RECOGNITION AND AWARDS}}
   \nocite{*}
-  \putbib[CV_invited]
+  \putbib[CV_awards]
 \end{bibunit}
 
-\vspace{-0.1in}
-
-%% \begin{bibunit}[unsrtnat]
-%%   \renewcommand{\refname}{{\large COURSES TAUGHT}}
-%%   \nocite{*}
-%%   \putbib[CV_courses_taught]
-%% \end{bibunit}
-
-%% \vspace{-0.1in}
-
-%% \begin{bibunit}[unsrtnat]
-%%   \renewcommand{\refname}{{\large MINISYMPOSIA ORGANIZED}}
-%%   \nocite{*}
-%%   \putbib[CV_symposia]
-%% \end{bibunit}
-
-%%\vspace{-0.1in}
+%\vspace{-0.1in}
+%%\vspace*{\fill}
+\newpage
+\pagestyle{fancy}
+\lhead[]{Aidan Thompson}
+\rhead[]{February 2020, p.~\thepage}
+\cfoot{}
+\setlength{\headheight}{\myheadheight}
+\setlength{\topmargin}{\mytopmargin}    
 
 \begin{bibunit}[unsrtnat]
   \renewcommand{\refname}{{\large POST-DOCTORAL MENTORSHIP}}
@@ -252,30 +190,19 @@ athomps@sandia.gov \hspace{.1in} (505) 218-1011 \\
   \putbib[CV_students]
 \end{bibunit}
 
-\input{CV_service.tex}
+\input{CV_service_all.tex}
 
-\input{CV_referee.tex}
+\begin{bibunit}[unsrtnat]
+  \renewcommand{\refname}{{\large INVITED TALKS}}
+  \nocite{*}
+  \putbib[CV_invited]
+\end{bibunit}
 
-\input{CV_proposal.tex}
-
-%\vspace{-0.1in}
-%\begin{bibunit}[unsrtnat]
-%  \renewcommand{\refname}{{\large JOURNAL REFEREE}}
-%  \nocite{*}
-%  \putbib[CV_referee]
-%\end{bibunit}
-%
-%\input{CV_references.tex}
-
-%\vspace{-0.15in}
-
-%\vspace{\sectionskip}
-%\noindent
-%{\large \textbf{REFERENCES}}
-%\vspace{\sectionskip}
-
-%References available upon request.
-
-\vspace*{\fill}
+\begin{bibunit}[unsrtnat]
+  \renewcommand{\refname}{{\large PEER-REVIEWED JOURNAL ARTICLES \\
+    \noindent Google Scholar: \url{https://scholar.google.com/citations?user=RxtcvuUAAAAJ&hl=en}}}
+  \nocite{*}
+  \putbib[CV_journal_articles]
+\end{bibunit}
 
 \end{document}

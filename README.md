@@ -1,11 +1,16 @@
 # CV
 Latex files for curriculum vitae.
-I customized make_cv.sh for my OS X latex installation.
-To run it:
+
+CV.pdf is longw-winded
+CV_short.pdf is a bit more compact.
+ 
+You can still use TexShop to edits Latex and Bib files, but do not try to compile. Instead use:
 
 ./make_cv.sh
+or
+./make_cv_short.sh
 
-I generates a lot of error messages, but it works.
+It generates a lot of error messages, but it works.
 
 To clean up and start over:
 
